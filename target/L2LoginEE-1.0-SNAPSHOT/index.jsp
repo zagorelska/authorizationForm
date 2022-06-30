@@ -37,7 +37,7 @@
             <div><label>Age: </label><input type="number" name="age"></div><br>
             <div><input type="submit" /></div>
         </form>
-        <% if (incorrect != null && !"".equals(login)) { %> <p><%= incorrect %></p> <% } %>
+        <% if (incorrect != null && !"".equals(incorrect)) { %> <p><%= incorrect %></p> <% } %>
     <% } else { %>
         <h1>You are logged in as: <%= login %></h1>
         <br>Click this link to <a href="/login?a=exit">logout</a>
